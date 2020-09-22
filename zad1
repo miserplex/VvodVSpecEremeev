@@ -1,0 +1,18 @@
+n = int(input())
+bag = 1
+for i in range(0,n):
+    b=1
+    if i ==0:
+         print(" "*(n-1), end="")
+    while b != i+1:
+        if bag == 1:
+            print(" "*(n-i-1), end="")
+            bag =0
+        print(b,end ="")
+        b=b+1
+    while b != 0:
+        print(b,end="")
+        b=b-1
+    print('')
+    bag = 1
+    
